@@ -9,15 +9,17 @@
   <body>
     <div class="nav">
       <ul>
-        <li class="nav-li active"><a href="#home">Home</a></li>
-        <li class="nav-li"><a href="#projects">Projects</a></li>
-        <li class="nav-li"><a href="#">About Me</a></li>
-        <li class="nav-li"><a href="#">Contact</a></li>
+        <li class="nav-li active clicked" id="home">
+          <a href="#home">Home</a>
+        </li>
+        <li class="nav-li" id="projects"><a href="#projects">Projects</a></li>
+        <li class="nav-li" id="about_me"><a href="#about_me">About Me</a></li>
+        <li class="nav-li" id="contact"><a href="#contact">Contact</a></li>
       </ul>
     </div>
     <div class="container">
-      <div id="home">
-        <div class="flex">
+      <section id="home" class="active-section">
+        <div class="inner">
           <h1>Boris Nachev Full-stack Developer</h1>
           <img
             src="./1000_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju-removebg-preview.png"
@@ -27,7 +29,7 @@
         <hr />
         <div class="nav-home">
           <div class="nav-item">
-            <h2><a href="#projects">Projects</a></h2>
+            <h2 id="#projects">Projects</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               delectus voluptas cupiditate eveniet non obcaecati necessitatibus
@@ -36,7 +38,7 @@
             </p>
           </div>
           <div class="nav-item">
-            <h2><a href="#about-me">About Me</a></h2>
+            <h2 id="about_me">About Me</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               delectus voluptas cupiditate eveniet non obcaecati necessitatibus
@@ -45,7 +47,7 @@
             </p>
           </div>
           <div class="nav-item">
-            <h2><a href="#contact">Contact</a></h2>
+            <h2 id="contact">Contact</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
               delectus voluptas cupiditate eveniet non obcaecati necessitatibus
@@ -54,10 +56,23 @@
             </p>
           </div>
         </div>
-      </div>
-      <div id="projects"></div>
+      </section>
+      <section id="projects">
+        <div class="inner">
+          <h1>THIS IS projects SECTION</h1>
+        </div>
+      </section>
+      <section id="about_me">
+        <div class="inner">
+          <h1>THIS IS about_me SECTION</h1>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="inner">
+          <h1>THIS IS contact SECTION</h1>
+        </div>
+      </section>
     </div>
+    <script src="./scrypt.js"></script>
   </body>
 </html>
-
-<script src="./scrypt.js"></script>

@@ -4,7 +4,7 @@ html {
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -46,7 +46,7 @@ body {
   border-left: 3px solid rgba(172, 172, 172, 0.432);
   color: white;
 }
-.nav ul li {
+.nav ul .nav-li {
   padding: 15px 10px;
   position: relative;
   overflow: hidden;
@@ -57,7 +57,7 @@ body {
   transition: width 0.5s;
   white-space: nowrap;
 }
-.nav ul li::before {
+.nav ul .nav-li::before {
   content: "";
   height: 100%;
   width: 100%;
@@ -72,26 +72,34 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-left: none;
 }
-.nav ul li .link {
+.nav ul .nav-li .link {
   display: none;
 }
 
-.container #home {
+.container section {
   height: 100vh;
-  padding: 50px 350px;
+  padding: 50px 200px;
   gap: 150px;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0.5s;
+  position: absolute;
 }
-.container #home h1 {
+.container #home .inner {
+  display: flex;
+  justify-content: space-around;
+}
+.container #home .inner h1 {
   font-size: 65px;
   width: 400px;
   color: aliceblue;
   align-self: end;
   margin-bottom: 30px;
 }
-.container #home img {
+.container #home .inner img {
   align-self: start;
 }
-.container #home hr {
+.container #home .inner hr {
   margin-top: 15px;
 }
 .container #home .nav-home {
@@ -99,19 +107,35 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.container #home .nav-home p {
+  margin-top: 15px;
+}
 .container #home .nav-home h2 {
-  margin-bottom: 10px;
   text-decoration: underline;
+  display: inline;
+  cursor: pointer;
 }
 .container #home .nav-home .nav-item {
   flex-basis: 30%;
   color: aliceblue;
 }
-.container #projects {
-  height: 100vh;
+.container #projects .inner {
+  border: 1px solid black;
+  height: 100%;
+  padding: 150px;
+}
+.container #about_me .inner {
+  border: 1px solid black;
+  height: 100%;
+  padding: 150px;
+}
+.container #contact .inner {
+  border: 1px solid black;
+  height: 100%;
+  padding: 150px;
 }
 
-.flex {
-  display: flex;
-  gap: 50px;
+.active-section {
+  opacity: 1 !important;
+  z-index: 2 !important;
 }/*# sourceMappingURL=style.css.map */

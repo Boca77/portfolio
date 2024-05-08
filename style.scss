@@ -4,7 +4,7 @@ html {
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -52,7 +52,7 @@ body {
     border-left: 3px solid rgba(172, 172, 172, 0.432);
     color: white;
 
-    li {
+    .nav-li {
       padding: 15px 10px;
       position: relative;
       overflow: hidden;
@@ -85,34 +85,46 @@ body {
 }
 
 .container {
-  #home {
+  section {
     height: 100vh;
-    padding: 50px 350px;
+    padding: 50px 200px;
     gap: 150px;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+  }
+  #home {
+    .inner {
+      display: flex;
+      justify-content: space-around;
+      h1 {
+        font-size: 65px;
+        width: 400px;
+        color: aliceblue;
+        align-self: end;
+        margin-bottom: 30px;
+      }
 
-    h1 {
-      font-size: 65px;
-      width: 400px;
-      color: aliceblue;
-      align-self: end;
-      margin-bottom: 30px;
+      img {
+        align-self: start;
+      }
+
+      hr {
+        margin-top: 15px;
+      }
     }
-
-    img {
-      align-self: start;
-    }
-
-    hr {
-      margin-top: 15px;
-    }
-
     .nav-home {
       margin-top: 15px;
       display: flex;
       justify-content: space-between;
+      p {
+        margin-top: 15px;
+      }
       h2 {
-        margin-bottom: 10px;
         text-decoration: underline;
+        display: inline;
+        cursor: pointer;
       }
       .nav-item {
         flex-basis: 30%;
@@ -120,12 +132,33 @@ body {
       }
     }
   }
+
   #projects {
-    height: 100vh;
+    .inner {
+      border: 1px solid black;
+      height: 100%;
+      padding: 150px;
+    }
+  }
+
+  #about_me {
+    .inner {
+      border: 1px solid black;
+      height: 100%;
+      padding: 150px;
+    }
+  }
+
+  #contact {
+    .inner {
+      border: 1px solid black;
+      height: 100%;
+      padding: 150px;
+    }
   }
 }
 
-.flex {
-  display: flex;
-  gap: 50px;
+.active-section {
+  opacity: 1 !important;
+  z-index: 2 !important;
 }
