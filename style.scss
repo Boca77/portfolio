@@ -134,10 +134,48 @@ body {
   }
 
   #projects {
+    text-align: center;
+    overflow: hidden;
+    h2 {
+      color: aliceblue;
+      font-size: 70px;
+    }
     .inner {
-      border: 1px solid black;
+      display: flex;
+      align-items: center;
       height: 100%;
-      padding: 150px;
+      justify-content: space-evenly;
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 8px;
+        cursor: pointer;
+      }
+      .left {
+        transform: rotate(135deg);
+      }
+      .right {
+        transform: rotate(-45deg);
+      }
+      #imgs {
+        display: flex;
+        padding: 50px;
+        gap: 15px;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+
+        .slide {
+          transition: all 0.5s;
+          cursor: pointer;
+        }
+        img {
+          width: 25%;
+          margin: 0 15px;
+        }
+      }
     }
   }
 
