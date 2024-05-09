@@ -210,9 +210,12 @@ body {
   font-size: 0.8rem;
   line-height: 150%;
   letter-spacing: 2px;
+  height: 125px;
 }
 .container #projects .inner .container .wrapper .card-content .button-wrapper {
   margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 .container #projects .inner .container .wrapper .card-content .btn {
   border: none;
@@ -222,9 +225,6 @@ body {
   font-size: 0.8rem;
   letter-spacing: 2px;
   cursor: pointer;
-}
-.container #projects .inner .container .wrapper .card-content .btn + .btn {
-  margin-left: 10px;
 }
 .container #projects .inner .container .wrapper .card-content .outline {
   background: transparent;

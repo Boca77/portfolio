@@ -220,10 +220,13 @@ body {
               font-size: 0.8rem;
               line-height: 150%;
               letter-spacing: 2px;
+              height: 125px;
             }
 
             .button-wrapper {
               margin-top: 18px;
+              display: flex;
+              justify-content: space-between;
             }
 
             .btn {
@@ -234,10 +237,6 @@ body {
               font-size: 0.8rem;
               letter-spacing: 2px;
               cursor: pointer;
-            }
-
-            .btn + .btn {
-              margin-left: 10px;
             }
 
             .outline {
