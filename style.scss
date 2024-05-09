@@ -161,9 +161,19 @@ body {
     text-align: center;
 
     h2 {
+      display: inline-block;
       color: aliceblue;
-      font-size: 70px;
+      font-size: 60px;
       margin-bottom: 25px;
+
+      &.main {
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.26);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
     }
     .inner {
       display: flex;
@@ -275,9 +285,22 @@ body {
 
   #about_me {
     .inner {
-      border: 1px solid black;
       height: 100%;
-      padding: 150px;
+      padding: 150px 0;
+      color: aliceblue;
+      h2 {
+        font-size: 50px;
+        padding-bottom: 50px;
+      }
+      p {
+        font-size: 25px;
+        padding: 50px;
+        background: rgba(255, 255, 255, 0.096);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      }
     }
   }
 
