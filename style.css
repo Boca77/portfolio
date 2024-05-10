@@ -49,6 +49,7 @@ a {
 
 body {
   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-attachment: fixed;
   display: flex;
 }
 
@@ -112,6 +113,11 @@ body {
   transition: opacity 0.5s;
   position: absolute;
 }
+@media (max-width: 420px) {
+  .container section {
+    padding: 0px;
+  }
+}
 .container #home .inner {
   display: flex;
   justify-content: space-around;
@@ -148,6 +154,11 @@ body {
 }
 .container #projects {
   text-align: center;
+}
+@media (max-width: 1024px) {
+  .container #projects {
+    padding: 0px !important;
+  }
 }
 .container #projects h2 {
   padding: 15px;
@@ -302,6 +313,12 @@ body {
 .container #contact .inner .content {
   display: flex;
   gap: 150px;
+}
+@media (max-width: 420px) {
+  .container #contact .inner .content {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 .container #contact .inner .content .social-media p {
   width: 350px;

@@ -54,6 +54,7 @@ body {
     #00bf72,
     #a8eb12
   );
+  background-attachment: fixed;
   display: flex;
 }
 
@@ -118,6 +119,9 @@ body {
     z-index: 0;
     transition: opacity 0.5s;
     position: absolute;
+    @media (max-width: 420px) {
+      padding: 0px;
+    }
   }
   #home {
     .inner {
@@ -160,6 +164,10 @@ body {
 
   #projects {
     text-align: center;
+    // width: 100%;
+    @media (max-width: 1024px) {
+      padding: 0px !important;
+    }
 
     h2 {
       padding: 15px;
@@ -328,6 +336,10 @@ body {
       .content {
         display: flex;
         gap: 150px;
+        @media (max-width: 420px) {
+          flex-direction: column;
+          gap: 50px;
+        }
         .social-media {
           p {
             width: 350px;
