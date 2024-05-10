@@ -286,20 +286,27 @@ body {
   #about_me {
     .inner {
       height: 100%;
-      padding: 150px 0;
+      padding: 100px 0;
       color: aliceblue;
       h2 {
         font-size: 50px;
         padding-bottom: 50px;
       }
-      p {
-        font-size: 25px;
+      .content {
+        font-size: 20px;
         padding: 50px;
         background: rgba(255, 255, 255, 0.096);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgba(255, 255, 255, 0.18);
+        .lists {
+          font-size: 16px;
+          display: flex;
+          justify-content: space-around;
+          width: 750px;
+          gap: 25px;
+        }
       }
     }
   }
