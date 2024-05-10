@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -149,19 +150,15 @@ body {
   text-align: center;
 }
 .container #projects h2 {
-  display: inline-block;
+  padding: 15px;
+  display: block;
   color: aliceblue;
   font-size: 60px;
   margin-bottom: 25px;
+  border-bottom: 3px white solid;
 }
 .container #projects h2.main {
-  padding: 15px;
-  background: rgba(255, 255, 255, 0.26);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  font-family: Poppins, sans-serif;
 }
 .container #projects .inner {
   display: flex;
@@ -169,8 +166,9 @@ body {
   flex-wrap: wrap;
   overflow: scroll;
   overflow-x: hidden;
-  max-height: 85%;
+  max-height: 75%;
   justify-content: center;
+  margin-top: 50px;
 }
 .container #projects .inner .container {
   flex-basis: 30%;
@@ -268,7 +266,10 @@ body {
 }
 .container #about_me .inner h2 {
   font-size: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 5px;
+  margin-bottom: 45px;
+  border-bottom: 3px solid white;
+  font-family: Poppins, sans-serif;
 }
 .container #about_me .inner .content {
   font-size: 20px;
@@ -288,9 +289,103 @@ body {
   gap: 25px;
 }
 .container #contact .inner {
-  border: 1px solid black;
   height: 100%;
-  padding: 150px;
+  padding: 50px 50px;
+  color: aliceblue;
+}
+.container #contact .inner h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid white;
+  font-family: Poppins, sans-serif;
+}
+.container #contact .inner .content {
+  display: flex;
+  gap: 150px;
+}
+.container #contact .inner .content .social-media p {
+  width: 350px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container #contact .inner .content .social-media ul {
+  list-style: none;
+}
+.container #contact .inner .content .social-media ul li {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.container #contact .inner .content .message-section {
+  display: flex;
+  flex-direction: column;
+}
+.container #contact .inner .content .message-section p {
+  width: 350px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.container #contact .inner .content .message-section .input-container {
+  position: relative;
+  margin-bottom: 25px;
+}
+.container #contact .inner .content .message-section .input-container label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+.container #contact .inner .content .message-section .input-container input {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  background: transparent;
+  width: 100%;
+  padding: 8px 0 5px 0;
+  font-size: 16px;
+  color: #fff;
+}
+.container #contact .inner .content .message-section .input-container input:focus {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid aliceblue;
+}
+.container #contact .inner .content .message-section .btn {
+  color: #fff;
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.096);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  outline: none;
+  border: 0;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+.container #contact .inner .content .message-section .input-container input:focus ~ label,
+.container #contact .inner .content .message-section .input-container input:valid ~ label {
+  top: -12px;
+  font-size: 12px;
+}
+.container #contact .inner .content .message-section textarea {
+  margin-top: 25px;
+  background: rgba(255, 255, 255, 0.096);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 15px;
+  width: 550px;
+  height: 150px;
 }
 
 .active-section {
