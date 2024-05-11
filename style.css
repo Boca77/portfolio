@@ -208,6 +208,11 @@ body {
   display: inline;
   cursor: pointer;
 }
+@media (max-width: 900px) {
+  .main .container #home .nav-home h2 {
+    font-size: 15px;
+  }
+}
 .main .container #home .nav-home .nav-item {
   flex-basis: 30%;
   color: aliceblue;
