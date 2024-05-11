@@ -1,4 +1,6 @@
 const nav = document.getElementsByClassName("nav-li");
+const burger = document.getElementById("burger");
+const navBody = document.getElementById("nav");
 
 Array.from(nav).forEach((li) => {
   li.addEventListener("mouseover", () => {
@@ -32,8 +34,19 @@ Array.from(nav).forEach((li) => {
     const currentSection = document.querySelector(`section#${clickedId}`);
     if (currentSection) {
       currentSection.classList.add("active-section");
-    } else {
-      console.error(`Section with ID '${clickedId}' not found.`);
     }
+  });
+});
+
+burger.addEventListener("click", () => {
+  console.log("test");
+  navBody.classList.toggle("burger-on");
+  navBody.classList.toggle("nav");
+});
+
+Array.from(nav).forEach((li) => {
+  li.addEventListener("click", () => {
+    navBody.classList.remove("burger-on");
+    navBody.classList.add("nav");
   });
 });

@@ -57,10 +57,12 @@ body {
   background-attachment: fixed;
 }
 
-.burger {
-  float: right;
+#burger {
+  right: 0;
   padding: 25px;
   display: none;
+  z-index: 99;
+  position: absolute;
   @media (max-width: 900px) {
     display: block;
   }
@@ -81,13 +83,14 @@ body {
   }
   .nav {
     position: sticky;
-    top: 0px;
+    top: 150px;
     margin: 0px 50px;
     height: 100vh;
     max-width: 150px;
     padding: 150px 0;
     @media (max-width: 900px) {
-      display: none;
+      position: absolute;
+      top: -100vh;
     }
     ul {
       list-style: none;
@@ -502,4 +505,31 @@ body {
 .active-section {
   opacity: 1 !important;
   z-index: 5 !important;
+}
+
+.burger-on {
+  top: 0 !important;
+  position: absolute;
+  transition: top 1s;
+  z-index: 15;
+  height: 100%;
+  color: white;
+  width: 100vw;
+  padding-top: 50px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  background-attachment: fixed;
+  ul {
+    list-style: none;
+
+    li {
+      margin: 15px 25px;
+    }
+  }
 }
