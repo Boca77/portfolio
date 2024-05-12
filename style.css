@@ -354,18 +354,7 @@ body {
 .main .container #about_me .inner {
   height: 100%;
   width: 100%;
-  padding: 100px 0;
   color: aliceblue;
-}
-@media (max-width: 900px) {
-  .main .container #about_me .inner {
-    padding: 50px;
-  }
-}
-@media (max-width: 400px) {
-  .main .container #about_me .inner {
-    padding: 20px;
-  }
 }
 .main .container #about_me .inner h2 {
   font-size: 50px;
